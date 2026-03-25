@@ -39,3 +39,13 @@
 .nav-item a:hover {
     color: #000;
 }
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
