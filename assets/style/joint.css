@@ -1,2 +1,21 @@
 @charset "utf-8";
 @import './reset.css';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7a00;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-name {
+    font-size: 30px;
+    font-weight: bold;
+}
