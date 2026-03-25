@@ -24,3 +24,43 @@
     width: 500px;
     height: 400px;
 }
+
+.about-history {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 100px 80px;
+}
+
+.about-history-text {
+    max-width: 400px;
+}
+
+.about-history h3 {
+    font-size: 70px;
+    color: #dd2803;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.about-restaurant {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    gap: 80px;
+    padding: 100px 80px;
+}
+
+.about-restaurant-text {
+    max-width: 400px;
+}
+
+.about-restaurant h3{
+    font-size: 70px;
+    color: #4a5fc1;
+    margin-bottom: 20px;
+}
