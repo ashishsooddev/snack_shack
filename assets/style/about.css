@@ -1,2 +1,26 @@
 @charset "utf-8";
 @import './reset.css';
+
+.about-hero {
+    text-align: center;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about-hero h2 {
+    top: 0;
+    left: 300px;
+    position: absolute;
+    font-size: 120px;
+    color: #dd2803;
+    line-height: 0.8;
+    margin-bottom: 20px;
+}
+
+.about-hero img {
+    width: 500px;
+    height: 400px;
+}
