@@ -1,2 +1,24 @@
 @charset "utf-8";
 @import './reset.css';
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
