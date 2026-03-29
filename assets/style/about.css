@@ -27,14 +27,12 @@
 
 .about-history {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 80px;
     padding: 100px 80px;
 }
 
-.about-history-text {
-    max-width: 400px;
-}
+.about-history-text, .about-restaurant-text { max-width: 400px; }
 
 .about-history h3 {
     font-size: 70px;
@@ -48,19 +46,16 @@
 }
 
 .about-restaurant {
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: space-evenly;
     gap: 80px;
     padding: 100px 80px;
-}
-
-.about-restaurant-text {
-    max-width: 400px;
 }
 
 .about-restaurant h3{
     font-size: 70px;
     color: #4a5fc1;
     margin-bottom: 20px;
+    line-height: 1;
 }
