@@ -26,7 +26,7 @@ section {
 
 .about-hero h2 {
     top: 0;
-    left: 50%;
+    left: 400px;
     position: absolute;
     font-size: 120px;
     color: #dd2803;
@@ -50,12 +50,17 @@ section {
     padding: 100px 80px;
 }
 
-.about-history-text, .about-restaurant-text { max-width: 400px; }
+.about-history-text, .about-restaurant-text { 
+    max-width: 400px;
+    line-height: 1.7;
+    font-size: 16px;
+}
 
 .about-history h3 {
     font-size: 70px;
     color: #dd2803;
     margin-bottom: 20px;
+    line-height: 1;
 }
 
 .about-image {
@@ -87,7 +92,117 @@ section {
 
 .about-restaurant h3{
     font-size: 70px;
-    color: #4a5fc1;
+    color: #fbc02d;
     margin-bottom: 20px;
     line-height: 1;
+}
+
+.about-history h3::after,
+.about-restaurant h3::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background-color: #dd2803;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+/* Fade‑In Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-hero,
+.about-history,
+.about-restaurant {
+    animation: fadeUp 1.2s ease forwards;
+}
+
+/* MOBILE & TABLET RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .about-hero {
+        flex-direction: column;
+        padding: 80px 40px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-hero h2 {
+        font-size: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-hero img {
+        width: 90%;
+        max-width: 420px;
+    }
+
+    .about-history,
+    .about-restaurant {
+        flex-direction: column;
+        padding: 80px 40px;
+        gap: 60px;
+        text-align: center;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+    section {
+        margin: 40px 16px;
+        border-radius: 20px;
+    }
+
+    .about-hero {
+        padding: 60px 20px;
+    }
+
+    .about-hero h2 {
+        font-size: 72px;
+        position: relative;
+        margin-bottom: 20px;
+        opacity: 0.2;
+    }
+
+    .about-hero img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 16px;
+    }
+
+    .about-history,
+    .about-restaurant {
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .about-history h3,
+    .about-restaurant h3 {
+        font-size: 48px;
+    }
+
+    .about-history-text,
+    .about-restaurant-text {
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.7;
+    }
 }
