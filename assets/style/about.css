@@ -15,24 +15,20 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 60px; */
     position: relative;
-    background: #fff6e5;
+    background-color: #fff6e5;
     overflow: hidden;
-
 }
 
 .about-hero h2 {
-    top: 0;
-    left: 20rem;
     position: absolute;
-    font-size: 120px;
+    font-size: 100px;
     color: #dd2803;
     line-height: 0.8;
     margin-bottom: 20px;
     transform: translateX(-50%, -50%);
     z-index: 2;
-    pointer-events: none;
+    transition: transform 0.4s ease;
 }
 
 .about-hero img {
@@ -57,7 +53,7 @@ section {
     font-size: 16px;
 }
 
-.about-history h3 {
+.about-history h3, .our {
     display: inline-block;
     font-size: 70px;
     color: #dd2803;
@@ -112,6 +108,53 @@ section {
     background-color: #dd2803;
     margin-top: 10px;
     border-radius: 10px;
+}
+
+/* Testimonial */
+.testimonial-layout {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.testimonial-layout ul {
+    display: flex; /* Use Flexbox instead of Grid */
+    flex-wrap: wrap;  /* Allows items to move to next line */
+    justify-content: center;
+    gap: 30px; /* Space between columns */
+    list-style: none;
+}
+
+.stars i {
+    font-size: 15px;
+}
+
+
+.column {
+    max-width: calc(25% - 15px);
+    flex: 0 0 calc(25% - 15px);
+    background-color:#fff6e5;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.column:hover {
+    transform: translateY(-10px);
+}
+
+.column img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Keeps aspect ratio clean */
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.customer {
+    display: block;        /* moves name to its own line */
+    margin-top: 10px;
+    font-weight: 700;      /* strong bold */
 }
 
 
