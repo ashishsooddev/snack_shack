@@ -58,6 +58,21 @@ main .btn-secondary {
   border: 2px solid #fff;
   color: #fff;
 }
+main .featured-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .featured-card {
+  width: 280px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
 /* contact */
 .contact {
     background-color: #f5f5f5;
