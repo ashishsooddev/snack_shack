@@ -39,6 +39,27 @@
 .nav-item a:hover {
     color: #000;
 }
+
+.search-box {
+    display: flex;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 150px;
+}
+
+.search-btn {
+    background-color: #fffcfa;
+    color: rgb(9, 9, 9);
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
 footer {
     background-color: #222;
     color: white;
@@ -47,5 +68,5 @@ footer {
 }
 
 .footer-bottom p {
-    font-size: 14px;
+    font-size: 20px;
 }
