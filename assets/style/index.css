@@ -13,34 +13,10 @@ main section {
 
 main h2 {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 4rem;
   margin-bottom: 30px;
 }
 
-main .hero {
-  position: relative;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-}
-
-main .hero-image {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-main .hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-main .hero-image::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-}
 main .hero-buttons a {
   padding: 10px 20px;
   border-radius: 5px;
@@ -50,7 +26,7 @@ main .hero-buttons a {
 }
 
 main .btn-primary {
-  background: #ff6b6b;
+  background: #ff7a00;
   color: #fff;
 }
 
@@ -155,19 +131,115 @@ main .gallery-grid img:hover {
   transform: scale(1.05);
 }
 
+main .hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+main .hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+main .hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.7) 30%,
+    rgba(0,0,0,0.4) 60%,
+    rgba(0,0,0,0.2) 100%
+  );
+}
+
+main .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  color: #fff;
+}
+
+main .hero-subtitle {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+main .hero h1 {
+  font-size: 5rem;
+  margin: 15px 0;
+  line-height: 1.2;
+}
+
+main .hero-text {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+main .hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+main .hero-buttons a {
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+main .btn-primary {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+main .btn-primary:hover {
+  background: #ff4b4b;
+}
+
+main .btn-secondary {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+main .btn-secondary:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   main .hero {
-    height: auto;
-    padding: 60px 5%;
+    height: 80vh;
+    padding: 0 5%;
+    text-align: center;
+    justify-content: center;
   }
 
-  main .about {
-    flex-direction: column;
-    text-align: center;
+  main .hero-content {
+    max-width: 100%;
   }
 
   main .hero h1 {
     font-size: 2.2rem;
+  }
+
+  main .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
