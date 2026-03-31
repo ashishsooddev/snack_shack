@@ -2,21 +2,16 @@
 @import './reset.css';
 @import './joint.css';
 
-/* MAIN */
 main {
   width: 100%;
   overflow-x: hidden;
   background: #f4f4f4;
 }
 
-/* GENERAL SECTION */
 main section {
   padding: 80px 8%;
 }
 
-/* =========================
-   SUBS-SECTIONS (NEW DESIGN)
-   ========================= */
 .subs-section {
   background: #ffffff;
   margin: 60px auto;
@@ -26,12 +21,9 @@ main section {
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
-/* alternate soft color for better UI */
 .subs-section:nth-child(even) {
   background: #fff7f0;
 }
-
-/* ========================= */
 
 main h2 {
   text-align: center;
@@ -39,17 +31,15 @@ main h2 {
   margin-bottom: 30px;
 }
 
-/* HERO FIX */
 main .hero {
   position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
   padding: 0 10%;
-  margin: 0; /* IMPORTANT FIX */
+  margin: 0; 
 }
 
-/* HERO IMAGE */
 main .hero-image {
   position: absolute;
   inset: 0;
@@ -62,7 +52,6 @@ main .hero-image img {
   object-fit: cover;
 }
 
-/* OVERLAY */
 main .hero-image::after {
   content: "";
   position: absolute;
@@ -74,8 +63,6 @@ main .hero-image::after {
     rgba(0,0,0,0.2) 100%
   );
 }
-
-/* HERO TEXT */
 main .hero-content {
   position: relative;
   z-index: 2;
@@ -131,7 +118,6 @@ main .btn-secondary:hover {
   color: #000;
 }
 
-/* FEATURED */
 main .featured-grid {
   display: flex;
   gap: 20px;
@@ -159,7 +145,6 @@ main .featured-card img {
   border-radius: 10px;
 }
 
-/* ABOUT */
 main .about {
   display: flex;
   gap: 40px;
@@ -170,7 +155,6 @@ main .about-content {
   flex: 1;
 }
 
-/* MENU */
 main .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -196,7 +180,6 @@ main .menu-item img {
   border-radius: 10px;
 }
 
-/* SPECIALS */
 main .specials-grid {
   display: flex;
   gap: 20px;
@@ -219,7 +202,6 @@ main .special-card img {
   border-radius: 10px;
 }
 
-/* GALLERY */
 main .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -239,28 +221,133 @@ main .gallery-grid img:hover {
 }
 
 /* CONTACT */
+
+.contact {
+    background-color: #f5f5f5;
+}
+
+.contact-head {
+    background-color: rgb(231, 219, 208);
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.contact-head h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.contact-head h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #474646;
+}
+
 .contact-container {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 15px 40px;
+    flex-wrap: wrap;
+}
+.contact-form {
+    flex: 1;
+    min-width: 300px;
 }
 
-.contact-form,
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn-submit {
+    background-color: #e5974d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.btn-submit:hover {
+    background-color: #ed7105;
+}
+
 .contact-info {
-  flex: 1;
-  min-width: 300px;
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* FOOTER SOCIAL */
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.info-box {
+    margin-bottom: 10px;
+}
+
+.email {
+    text-align: right;
+}
+
+.map-box {
+    margin-top: 10px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.footer-social {
+    background-color: #f5f5f5;
+}
+
+.footer-social h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.social-link {
+    font-size: 18px;
+    color: #ff7a00;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    color: black;
+}
+
 .footer-social {
   text-align: center;
   padding: 30px 20px;
   background-color: #f5f5f5;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+/* RESPONSIVE */
 
 @media (max-width: 1024px) {
 
