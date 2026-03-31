@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import './reset.css';
+@import './joint.css';
 
 /* MAIN ONLY */
 main {
@@ -25,15 +26,6 @@ main .hero-buttons a {
   font-weight: bold;
 }
 
-main .btn-primary {
-  background: #ff7a00;
-  color: #fff;
-}
-
-main .btn-secondary {
-  border: 2px solid #fff;
-  color: #fff;
-}
 main .featured-grid {
   display: flex;
   gap: 20px;
@@ -202,12 +194,12 @@ main .hero-buttons a {
 }
 
 main .btn-primary {
-  background: #ff6b6b;
+  background: #ff7a00;
   color: #fff;
 }
 
 main .btn-primary:hover {
-  background: #ff4b4b;
+  background: #fa9230;
 }
 
 main .btn-secondary {
