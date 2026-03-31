@@ -7,16 +7,39 @@ main {
   overflow-x: hidden;
 }
 
-/* ALL MAIN SECTIONS */
 main section {
   padding: 80px 8%;
 }
 
-/* HEADINGS */
 main h2 {
   text-align: center;
   font-size: 2.4rem;
   margin-bottom: 30px;
+}
+
+main .hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+main .hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+main .hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
 }
 
 /* contact */
