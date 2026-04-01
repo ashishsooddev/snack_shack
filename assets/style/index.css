@@ -5,7 +5,7 @@
 main {
   width: 100%;
   overflow-x: hidden;
-  background: #f4f4f4;
+  background: #fce896;
 }
 
 main section {
@@ -240,11 +240,10 @@ main .gallery-grid img:hover {
 /* CONTACT */
 
 .contact {
-    background-color: #f5f5f5;
+    background-color: #fce896;
 }
 
 .contact-head {
-    background-color: rgb(231, 219, 208);
     text-align: center;
     padding: 10px 20px;
     margin-bottom: 30px;
