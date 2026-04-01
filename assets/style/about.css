@@ -47,7 +47,7 @@ main .container > section:first-of-type {
 .about-hero h2 {
     position: absolute;
     font-size: 100px;
-    color: #dd2803;
+    color: #fff;
     line-height: 0.8;
     margin-bottom: 20px;
     transform: translateX(-50%, -50%);
@@ -80,7 +80,7 @@ main .container > section:first-of-type {
 .about-history h3, .our {
     display: inline-block;
     font-size: 70px;
-    color: #dd2803;
+    color: #ff7a00;
     margin-bottom: 20px;
     line-height: 1;
 }
@@ -129,7 +129,7 @@ main .container > section:first-of-type {
     display: block;
     width: 80px;
     height: 5px;
-    background-color: #dd2803;
+    background-color: #ff7a00;
     margin-top: 10px;
     border-radius: 10px;
 }
