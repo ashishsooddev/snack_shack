@@ -9,6 +9,16 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
+/* Remove space between header and first About section */
+main .container #section:first-of-type {
+    margin-top: 0 !important;
+}
+
+/* Remove space between last About section and footer */
+main .container #section:last-of-type {
+    margin-bottom: 0 !important;
+}
+
 .about-hero {
     text-align: center;
     padding: 60px 0;
@@ -16,14 +26,27 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #fff6e5;
+    background-color: #fce896;
     overflow: hidden;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    border-radius: 0;
+}
+
+/* Remove container styling only for the hero section */
+main .container > section:first-of-type {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    background-color: transparent;
 }
 
 .about-hero h2 {
     position: absolute;
     font-size: 100px;
-    /* color: #dd2803; */
+    color: #dd2803;
     line-height: 0.8;
     margin-bottom: 20px;
     transform: translateX(-50%, -50%);
@@ -169,7 +192,7 @@
     }
 }
 
-.about-hero,
+.about-hero img,
 .about-history,
 .about-restaurant {
     animation: fadeUp 1.2s ease forwards;
