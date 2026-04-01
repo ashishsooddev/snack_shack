@@ -223,7 +223,8 @@ main .hero-text {
 }
 
 .wrapper .btn:hover {
-    background: #f5b4b4;
+    background: #ff7a00;
+    color: #fff;
 }
 
 .wrapper .register-link {
