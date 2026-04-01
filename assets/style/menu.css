@@ -1,6 +1,5 @@
 @charset "utf-8";
 @import './reset.css';
-@import './joint.css';
 
 .header {
     display: flex;
@@ -69,22 +68,21 @@
 .menu-container {
     background-color: rgb(249,242,234);
     display: flex;
-    justify-content: center;
-    gap: 6rem;
-    margin-bottom: 6rem;
+    justify-content: space-around;
+    padding: 4rem 40rem;
+    gap: 1rem;
 }
 
 .menu-section {
-    padding: 4rem 3rem;
-    max-width: 420px;
+    flex: 1;
+    max-width: 400px;
 }
 
 .menu-section h2 {
     font-size: 3rem;
     font-weight: 900;
     color: #000000;
-    letter-spacing: 0.04em;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
 }
 
@@ -95,12 +93,12 @@
 }
 
 .menu-item {
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
 }
 
 .item-header {
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
     align-items: baseline;
     margin-bottom: 0.8rem;
 }
@@ -112,7 +110,6 @@
 }
 
 .price {
-    opacity: 0.85;
     font-size: 1.7rem;
     font-weight: 500;
     color: #000000;
@@ -206,45 +203,4 @@ footer {
     margin-left: 100px;
     margin-top: 40px;
     }
-}
-
-/* 1. Fix the squashed layout */
-.menu-container {
-    padding: 4rem 0 !important;
-
-    margin: 8rem 0;
-}
-
-/* 2. Add clear separation between groups */
-.menu-container + .menu-container {
-    margin-top: 6rem;
-}
-
-/* 3. Improve internal spacing */
-.menu-section {
-    margin-bottom: 4rem;
-}
-
-/* 4. Make text breathe */
-.menu-item {
-    margin-bottom: 3rem;
-}
-
-.menu-section h2 {
-    margin-bottom: 2.5rem;
-}
-
-.menu-section {
-    animation: menuSectionFade 0.8s ease forwards;
-}
-
-
-/* REMOVE HEADER ↔ MENU GAP */
-.menu-container:first-of-type {
-    margin-top: 0 !important;
-}
-
-/* REMOVE MENU ↔ FOOTER GAP */
-.menu-container:last-of-type {
-    margin-bottom: 0 !important;
 }
