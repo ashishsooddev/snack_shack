@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/media/cartoon-11551057788bw864qbup7.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/style/joint.css" media="all">
@@ -19,7 +20,7 @@
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#">Home</a></li>
                     <li class="nav-item"><a href="./menu.html">Menu</a></li>
-                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="./about.html">About</a></li>
                     <li class="nav-item"><a href="#contact">Contact</a></li>
                 </ul>
            </nav>
@@ -39,7 +40,7 @@
                         Discover tasty bites, quick meals, and delicious treats made to satisfy every craving.
                      </p>
                 <div class="hero-buttons">
-                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#" class="btn btn-primary" id="openLogin">Login</a>
                     <a href="#about" class="btn btn-secondary">Learn More</a>
                 </div>
                 </div>
@@ -213,5 +214,29 @@
             <p>© 2026 Snack Shack. All rights reserved.</p>
             </div>
         </footer>
+        <!-- Login Modal Start -->
+        <div class="wrapper">
+            <form action="">
+                <span class="close-btn" id="closeLogin">&times;</span>
+                <h1>Login</h1>
+                <p class="sign-in">Sign in to your account</p>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" placeholder="Password" required>Remember me</label>
+                    <a href="#">Forgot password</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
