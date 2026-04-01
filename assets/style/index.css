@@ -143,6 +143,20 @@
     display: none;
 }
 
+.wrapper form {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 26px;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+}
 
 .wrapper > form {
     width: 420px;
@@ -154,7 +168,6 @@
     border-radius: 10px;
     padding: 30px 40px;
 }
-
 
 .wrapper.active { display: flex; }
 
