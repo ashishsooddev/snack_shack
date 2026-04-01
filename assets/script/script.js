@@ -1,7 +1,7 @@
 'use-strict';
 
 const openBtn = document.getElementById("openLogin");
-const closeBtn = document.querySelector(".close-btn");
+const closeBtn = document.getElementById("closeLogin");
 const wrapper = document.querySelector(".wrapper");
 
 // Open login form
